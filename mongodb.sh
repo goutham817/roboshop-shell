@@ -1,6 +1,6 @@
 source mongodb.repos
 
-sed-i -e /127.0.0.1/ -e /0.0.0.0/ mongodb.sh
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 
 dnf install mongodb-org -y
 
