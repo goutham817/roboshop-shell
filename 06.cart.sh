@@ -17,7 +17,7 @@ curl -L -o /tmp/cart.zip https://roboshop-artifacts.s3.amazonaws.com/cart-v3.zip
 unzip /tmp/cart.zip
 npm install
 
-systemctl deamon-reload
+systemctl daemon-reload
 
 systemctl enable cart
 systemctl restart cart
