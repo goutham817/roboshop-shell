@@ -21,9 +21,9 @@ systemctl start shipping
 dnf install mysql -y
 
 # update mysql ip
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/schema.sql
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/app-user.sql
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/master-data.sql
+mysql -h mysql.devopsb78.online -uroot -pRoboShop@1 < /app/db/schema.sql
+mysql -h mysql.devopsb78.online -uroot -pRoboShop@1 < /app/db/app-user.sql
+mysql -h mysql.devopsb78.online -uroot -pRoboShop@1 < /app/db/master-data.sql
 
 systemctl restart shipping
 

@@ -4,7 +4,7 @@ cp catalogue.service /etc/systemd/system/catalogue.service
 cp mongodb.repo /etc/yum.repos.d/mongo.repo
 dnf install mongodb-mongosh -y
 #update mongo server ip below
-mongosh --host MONGODB-SERVER-IPADDRESS </app/db/master-data.js
+mongosh --host mongodb.devopsb78.online </app/db/master-data.js
 
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
