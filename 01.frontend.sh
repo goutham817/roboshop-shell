@@ -19,5 +19,7 @@ curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend-v
 
 unzip /tmp/frontend.zip
 
+cd
+
 systemctl restart nginx
 
