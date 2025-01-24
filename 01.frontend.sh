@@ -1,3 +1,5 @@
+cp nginx.conf /etc/nginx/nginx.conf
+
 dnf module disable nginx -y
 dnf module enable nginx:1.24 -y
 dnf install nginx -y
@@ -5,7 +7,6 @@ dnf install nginx -y
 systemctl enable nginx
 systemctl start nginx
 
-cp nginx.conf /etc/nginx/nginx.conf
 
 rm -rf /usr/share/nginx/html/*
 

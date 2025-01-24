@@ -1,3 +1,5 @@
+cp user.service /etc/systemd/system/user.service
+
 dnf module disable nodejs -y
 dnf modue enable nodejs:20 -y
 dnf install nodejs -y
@@ -9,7 +11,7 @@ cd /app
 unzip /tmp/user.zip
 npm install
 
-cp user.service /etc/systemd/system/user.service
+
 
 systemctl daemon-reload
 systemctl enable user
