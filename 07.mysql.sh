@@ -1,6 +1,6 @@
 dnf install mysql-server -mysql
 
-systemctl enable mysqld
-systemctl start mysqld
+systemctl enable mysql
+systemctl start mysql
 
 mysql_secure_installation --set-root-pass RoboShop@1
