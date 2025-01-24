@@ -1,3 +1,5 @@
+# update catalogue and redis ip in cart.service file
+
 cp cart.service /etc/systemd/system/cart.service
 
 dnf module disable nodejs -y

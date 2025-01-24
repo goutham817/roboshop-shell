@@ -1,3 +1,5 @@
+# upadte all ip's in nginx.conf file
+
 cp nginx.conf /etc/nginx/nginx.conf
 
 dnf module disable nginx -y
